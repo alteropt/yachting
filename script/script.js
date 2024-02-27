@@ -19,6 +19,22 @@ window.onload = function() {
             faqs[index].classList.toggle('active')
         })
     })
+
+    /* Burger */
+    const burgerOpen = document.querySelector('.burger')
+    const burgerClose = document.querySelector('.burger-menu')
+    const body = document.querySelector('body')
+    const menu = document.querySelector('.menu')
+
+    burgerOpen.addEventListener('click', () => {
+        body.classList.add('menu-opened')
+        menu.classList.add('active')
+    })
+
+    burgerClose.addEventListener('click', () => {
+        body.classList.remove('menu-opened')
+        menu.classList.remove('active')
+    })
 }
 
 
